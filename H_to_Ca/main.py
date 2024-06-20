@@ -55,7 +55,7 @@ def click(button):
                 timer.config(text='')
             game_elements1.remove(btn_text)
             r = random.choice(elements2)
-            button.config(text=r, bg='#3A4CA8')
+            button.config(text=r)
             elements2.remove(r)
             
     elif game_elements2 != []:
@@ -63,10 +63,10 @@ def click(button):
             game_elements2.remove(btn_text)
             if elements3 != []:
                 r = random.choice(elements3)
-                button.config(text=r, bg='#25368B')
+                button.config(text=r)
                 elements3.remove(r)
             else:
-                button.config(text='', bg='#25368B')
+                button.config(text='')
             
     elif game_elements3 != []:
         if btn_text == game_elements3[0]:
